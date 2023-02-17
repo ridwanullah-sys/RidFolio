@@ -1,7 +1,9 @@
 export const Projects = () => {
     return (
         <div className="p-3 bg-blue-200">
-            <div className="text-center text-xl text-slate-600 font-bold mb-3">MY PROJECTS</div>
+            <div className="text-center text-xl text-slate-600 font-bold mb-3" id="project_text">
+                MY PROJECTS
+            </div>
             <div className="flex flex-col sm:flex-row items-center p-5">
                 <div
                     className=" w-[12rem] h-[15rem] rounded-lg border-4 grid grid-rows-5 transition duration-150 hover:scale-110 cursor-pointer"

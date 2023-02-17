@@ -12,6 +12,25 @@ module.exports = {
             screens: {
                 semimd: "1140px",
             },
+            animation: {
+                slideInB: "slideInB 1s",
+                slideInS: "slideInS 1s",
+                navBar: "navBar 1s",
+            },
+            keyframes: {
+                slideInB: {
+                    "0%": { transform: "translateX(3.5rem)" },
+                    "100%": { transform: "translateX(0rem)" },
+                },
+                slideInS: {
+                    "0%": { transform: "translateY(5rem)" },
+                    "100%": { transform: "translateY(0rem)" },
+                },
+                navBar: {
+                    "0%": { transform: "translateY(-5rem)" },
+                    "100%": { transform: "translateY(0rem)" },
+                },
+            },
         },
     },
     plugins: [],
