@@ -14,12 +14,11 @@ export const About = ({ aboutRef, myAboutIsVisible }) => {
             >
                 <div className={`${myAboutIsVisible ? "animate-slideInS" : null} `}>
                     As a proficient website developer, I have some expertise creating websites, web
-                    apps, and dapps. I am an avid user of javascript and python and several
-                    frameworks such as nextjs and django. I have demonstrated interpersonal
-                    abilities and am skilled at working with people while simultaneously being able
-                    to act independently. I have experience using creative problem-solving
-                    techniques and negotiating to get a win-win outcome. I always have a strong
-                    desire to grow and take on new tasks.
+                    apps, and dapps. I am an avid user of javascript and several frameworks such as
+                    NextJs and ReactJs. I have demonstrated interpersonal abilities and am skilled
+                    at working with people while simultaneously being able to act independently. I
+                    have experience using creative problem-solving techniques and negotiating to get
+                    a win-win outcome. I always have a strong desire to grow and take on new tasks.
                 </div>
             </div>
             <div
