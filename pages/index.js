@@ -51,7 +51,7 @@ export default function Home() {
                 className={`
                 bg-cover bg-fixed bg-top  pt-[4rem] sm:pt-[13rem] pb-[7rem]`}
                 style={{
-                    backgroundImage: `url("/4K-Office-Backgrounds (2).jpg")`,
+                    backgroundImage: `url("https://storage.fleek.zone/a8e1ca29-4f77-482c-a827-be4691847836-bucket/4K-Office-Backgrounds (2).jpg")`,
                 }}
             >
                 <About aboutRef={aboutRef} myAboutIsVisible={myAboutIsVisible} />

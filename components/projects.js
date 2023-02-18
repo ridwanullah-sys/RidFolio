@@ -16,7 +16,7 @@ export const Projects = ({ projectRef }) => {
                     }}
                 >
                     <img
-                        src="/Screenshot_20230212-130254_Chrome.jpg"
+                        src="https://storage.fleek.zone/a8e1ca29-4f77-482c-a827-be4691847836-bucket/Screenshot_20230212-130254_Chrome.jpg"
                         className="rounded-md h-full w-full row-span-4 border-b-4"
                     ></img>
                     <div className="flex flex-col justify-center">

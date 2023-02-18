@@ -13,10 +13,18 @@ export const HomePage = ({ setElement, homeRef, myHomeIsVisible }) => {
             <div className="flex flex-col items-center bg-slate-200 md:h-[50rem] semimd:w-128 pt-9 sm:p-5 semimd:flex-row semimd:items-start semimd:justify-center sm:items-center rounded-lg sm:shadow-2xl shadow-black overflow-hidden">
                 <div className="semimd:h-128 ">
                     <img
-                        src="/wallhaven-3k7qjv.jpg"
+                        src="https://storage.fleek.zone/a8e1ca29-4f77-482c-a827-be4691847836-bucket/wallhaven-3k7qjv.jpg"
                         className="rounded-md h-[25rem] md:w-[40rem] semimd:h-full semimd:w-full"
                     ></img>
                 </div>
+                <button
+                    onClick={async () => {
+                        const image = await getImage()
+                        console.log(image)
+                    }}
+                >
+                    element
+                </button>
                 <div
                     className={`${
                         myHomeIsVisible ? "animate-slideInS semimd:animate-slideInB" : null
