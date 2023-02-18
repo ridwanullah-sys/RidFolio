@@ -22,6 +22,12 @@ export const Navbar = () => {
                     </a>
                     <a
                         className="hover:transition-colors hover:duration-500 text-slate-100 font-bold hover:bg-slate-100 hover:text-blue-800 p-1 rounded-lg"
+                        href="#Skills"
+                    >
+                        SKILLS
+                    </a>
+                    <a
+                        className="hover:transition-colors hover:duration-500 text-slate-100 font-bold hover:bg-slate-100 hover:text-blue-800 p-1 rounded-lg"
                         href="#Projects"
                     >
                         PROJECTS
@@ -58,6 +64,12 @@ export const Navbar = () => {
                         href="#About"
                     >
                         ABOUT
+                    </a>
+                    <a
+                        className="hover:transition-colors hover:duration-500 text-slate-100 font-bold hover:bg-slate-100 hover:text-blue-800 p-1 rounded-lg"
+                        href="#Skills"
+                    >
+                        SKILLS
                     </a>
                     <a
                         className="hover:transition-colors hover:duration-500 text-slate-100 font-bold hover:bg-slate-100 hover:text-blue-800 p-1 rounded-lg m-1"
