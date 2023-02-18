@@ -6,6 +6,7 @@ import { About } from "../components/about"
 import { Navbar } from "../components/navbar"
 import { HomePage } from "../components/page"
 import { Projects } from "../components/projects"
+import { Skills } from "../components/skills"
 import styles from "../styles/Home.module.css"
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
     const { ref: projectRef, inView: myProjectsIsVisible } = useInView()
     const { ref: homeRef, inView: myHomeIsVisible } = useInView()
     const { ref: aboutRef, inView: myAboutIsVisible } = useInView()
+    const { ref: skillsRef, inView: mySkillsIsVisible } = useInView()
 
     useEffect(() => {
         if (element != null && element != undefined) {
@@ -49,12 +51,15 @@ export default function Home() {
             <div
                 id="About"
                 className={`
-                bg-cover bg-fixed bg-top  pt-[4rem] sm:pt-[13rem] pb-[7rem]`}
+                bg-cover bg-fixed bg-top  pt-[4rem] sm:pt-[13rem] pb-[7rem] bg-slate-800`}
                 style={{
                     backgroundImage: `url("https://storage.fleek.zone/a8e1ca29-4f77-482c-a827-be4691847836-bucket/4K-Office-Backgrounds (2).jpg")`,
                 }}
             >
                 <About aboutRef={aboutRef} myAboutIsVisible={myAboutIsVisible} />
+            </div>
+            <div className="overflow-hidden">
+                <Skills skillsRef={skillsRef} mySkillsIsVisible={mySkillsIsVisible} />
             </div>
             <div id="Projects">
                 <Projects projectRef={projectRef} myProjectsIsVisible={myProjectsIsVisible} />
