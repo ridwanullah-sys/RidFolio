@@ -1,7 +1,11 @@
-export const Projects = () => {
+export const Projects = ({ projectRef }) => {
     return (
         <div className="p-3 bg-blue-200">
-            <div className="text-center text-xl text-slate-600 font-bold mb-3" id="project_text">
+            <div
+                className="text-center text-xl text-slate-600 font-bold mb-3"
+                id="project_text"
+                ref={projectRef}
+            >
                 MY PROJECTS
             </div>
             <div className="flex flex-col sm:flex-row items-center p-5">

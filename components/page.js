@@ -1,16 +1,16 @@
 import { CgMail } from "react-icons/cg"
 import { AiOutlinePhone } from "react-icons/ai"
 import { AiOutlineHome } from "react-icons/ai"
-import { useEffect, useRef, useState } from "react"
+import { useEffect } from "react"
 
-export const HomePage = ({ setElement, onView }) => {
+export const HomePage = ({ setElement, homeRef, myHomeIsVisible }) => {
     useEffect(() => {
         setElement(document.getElementById("pageId"))
     }, [])
 
     return (
         <div id="pageId" className="sm:mx-8 ">
-            <div className="flex flex-col items-center bg-slate-200 md:h-[50rem] semimd:w-128 pt-9 sm:p-5 semimd:flex-row semimd:items-start semimd:justify-center sm:items-center rounded-lg sm:shadow-2xl shadow-black">
+            <div className="flex flex-col items-center bg-slate-200 md:h-[50rem] semimd:w-128 pt-9 sm:p-5 semimd:flex-row semimd:items-start semimd:justify-center sm:items-center rounded-lg sm:shadow-2xl shadow-black overflow-hidden">
                 <div className="semimd:h-128 ">
                     <img
                         src="/wallhaven-3k7qjv.jpg"
@@ -19,9 +19,9 @@ export const HomePage = ({ setElement, onView }) => {
                 </div>
                 <div
                     className={`${
-                        onView == "on Page" ? "animate-slideInS semimd:animate-slideInB" : null
+                        myHomeIsVisible ? "animate-slideInS semimd:animate-slideInB" : null
                     } w-11/12 sm:h-1/2 sm:w-9/12 semimd:h-128 semimd:w-5/12 semimd:p-5 flex flex-col justify-center transition-transform duration-500`}
-                    id="page_text"
+                    ref={homeRef}
                 >
                     <p className="m-2 semimd:my-4 text-slate-700">HELLO CHAMPS, MY NAME IS</p>
                     <div className="m-2 semimd:my-4">

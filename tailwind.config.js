@@ -13,8 +13,8 @@ module.exports = {
                 semimd: "1140px",
             },
             animation: {
-                slideInB: "slideInB 1s",
-                slideInS: "slideInS 1s",
+                slideInB: "slideInB 2s",
+                slideInS: "slideInS 2s",
                 navBar: "navBar 1s",
             },
             keyframes: {
