@@ -17,14 +17,7 @@ export const HomePage = ({ setElement, homeRef, myHomeIsVisible }) => {
                         className="rounded-md h-[25rem] md:w-[40rem] semimd:h-full semimd:w-full"
                     ></img>
                 </div>
-                <button
-                    onClick={async () => {
-                        const image = await getImage()
-                        console.log(image)
-                    }}
-                >
-                    element
-                </button>
+
                 <div
                     className={`${
                         myHomeIsVisible ? "animate-slideInS semimd:animate-slideInB" : null

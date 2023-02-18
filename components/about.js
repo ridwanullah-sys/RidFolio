@@ -22,13 +22,6 @@ export const About = ({ aboutRef, myAboutIsVisible }) => {
                     desire to grow and take on new tasks.
                 </div>
             </div>
-            <button
-                onClick={() => {
-                    console.log()
-                }}
-            >
-                element
-            </button>
             <div
                 className={`flex justify-between sm:w-[20rem] ${
                     myAboutIsVisible ? "animate-slideInS" : null
